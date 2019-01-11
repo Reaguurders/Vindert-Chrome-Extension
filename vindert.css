@@ -1,0 +1,14 @@
+.header .desknav ul li:not(:first-child) {
+	margin-left: 20px !important;
+}
+
+#vindert img {
+	width: 27px;
+	height: 27px;
+}
+
+#vindert {
+	display: block;
+	width: 27px;
+	height: 27px;
+}

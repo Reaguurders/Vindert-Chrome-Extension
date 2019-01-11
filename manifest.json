@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+ 
+	"name": "Vindert",
+	"version": "0.1.0",
+	"description": "Verbeterde zoekmachine voor Dumpert",
+
+	"web_accessible_resources": [
+		"vindert.css",
+		"images/*"
+	],
+
+	"icons": {
+		"128": "images/icon.png"
+	},
+ 
+	"content_scripts": [{
+		"css": ["vindert.css"],
+		"js": [
+			"jquery.min.js",
+			"vindert.js"
+		],
+		"matches": ["https://www.dumpert.nl/*"],
+		"all_frames": true
+	}]
+ 
+}
